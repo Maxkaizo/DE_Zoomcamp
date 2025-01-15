@@ -1,6 +1,0 @@
-
-
-video de bienvenida con todo el programa que veremos y como ayuda a crear y manejar flujos de datos
-
-un refresh del uso básico de docker
-

@@ -1,0 +1,18 @@
+### comandos
+
+# Para levantar postgres mediante docker
+docker run -it \
+    -e POSTGRES_USER="root" \
+    -e POSTGRES_PASSWORD="root" \
+    -e POSTGRES_DB="ny_taxi" \
+    -v /home/maxkaizo/DE_Zoomcamp/module_1/docker_sql/ny_taxi_data:/var/lib/postgresql/data \
+    -p 5432:5432 \
+postgres:13 
+
+# para poder ver los archivos dentro de la ruta montada (por que al iniciar el comando de arriba con docker, cambia los permisos)
+sudo chown -R $(whoami):$(whoami) /home/maxkaizo/DE_Zoomcamp/module_1/docker_sql/ny_taxi_data
+chmod -R 777 /home/maxkaizo/DE_Zoomcamp/module_1/docker_sql/ny_taxi_data
+
+
+# para conectarte a la base de datos:
+pgcli -h localhost -p 5432 -u root -d ny_taxi 
