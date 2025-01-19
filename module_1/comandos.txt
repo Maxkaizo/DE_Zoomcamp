@@ -16,3 +16,51 @@ chmod -R 777 /home/maxkaizo/DE_Zoomcamp/module_1/docker_sql/ny_taxi_data
 
 # para conectarte a la base de datos:
 pgcli -h localhost -p 5432 -u root -d ny_taxi 
+
+
+
+# Para levantar el contendor de pgadmin
+docker pull dpage/pgadmin4
+
+docker run -it \
+    -e 'PGADMIN_DEFAULT_EMAIL=admin@admin.com' \
+    -e 'PGADMIN_DEFAULT_PASSWORD=root' \
+    -p 8080:80 \
+    dpage/pgadmin4
+
+
+# Para crear la red
+docker network create pg-network
+
+# inicio de contenedores ajustados para usar la red creada
+
+docker run -it --rm \
+    -e POSTGRES_USER="root" \
+    -e POSTGRES_PASSWORD="root" \
+    -e POSTGRES_DB="ny_taxi" \
+    -v /home/maxkaizo/DE_Zoomcamp/module_1/docker_sql/ny_taxi_data:/var/lib/postgresql/data \
+    -p 5432:5432 \
+    --network=pg-network \
+    --name pg-database \
+postgres:13 
+
+
+docker run -it --rm \
+    -e 'PGADMIN_DEFAULT_EMAIL=admin@admin.com' \
+    -e 'PGADMIN_DEFAULT_PASSWORD=root' \
+    -p 8080:80 \
+    --network=pg-network \
+    --name pgadmin \
+    dpage/pgadmin4
+
+
+# Para convertir la notebook a script
+jupyter nbconvert --to=script notebook.ipynb
+
+python ingest_data.py \
+    --user=root
+    --password=root
+    --host=pg-d
+    --port=5432
+    --db = params.db
+    --table_name = params.table_name
