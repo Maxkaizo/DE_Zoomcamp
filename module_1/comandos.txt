@@ -57,6 +57,11 @@ docker run -it --rm \
 # Para convertir la notebook a script
 jupyter nbconvert --to=script notebook.ipynb
 
+
+# para correr el script de ingesta de datos desde el host
+
+URL="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
+
 python ingest_data.py \
     --user=root \
     --password=root \
@@ -64,4 +69,24 @@ python ingest_data.py \
     --port=5432 \
     --db=ny_taxi \
     --table_name=yellow_taxi_trip \
-    --url="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
+    --url=${URL}
+
+# Para crear el contenedor de ingesta de datos
+(Primero se ajusta el Dockerfile)
+docker build -t taxi_ingest:v001 .
+
+# para correr el script de ingesta de datos desde el contenedores
+
+
+URL="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
+
+docker run -it \
+    --network=pg-network \
+    taxi_ingest:v001 \
+    --user=root \
+    --password=root \
+    --host=pg-database \
+    --port=5432 \
+    --db=ny_taxi \
+    --table_name=yellow_taxi_trip \
+    --url=${URL}

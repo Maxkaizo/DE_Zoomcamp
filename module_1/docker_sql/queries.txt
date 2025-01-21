@@ -1,0 +1,50 @@
+# Primer join
+SELECT
+	tpep_pickup_datetime,
+	tpep_dropoff_datetime,
+	total_amount,
+	CONCAT(zpu."Borough", '/', zpu."Zone") AS "pickup_loc",
+	CONCAT(zdo."Borough", '/', zdo."Zone") AS "dropoff_loc"
+FROM
+	yellow_taxi_trip t,
+	zones zpu,
+	zones zdo
+WHERE
+	t."PULocationID" = zpu."LocationID" AND
+	t."DOLocationID" = zdo."LocationID"
+LIMIT 100;
+
+
+
+# Con join
+SELECT
+	tpep_pickup_datetime,
+	tpep_dropoff_datetime,
+	total_amount,
+	CONCAT(zpu."Borough", '/', zpu."Zone") AS "pickup_loc",
+	CONCAT(zdo."Borough", '/', zdo."Zone") AS "dropoff_loc"
+FROM
+	yellow_taxi_trip t 
+	JOIN zones zpu
+		ON t."PULocationID" = zpu."LocationID"
+	JOIN zones zdo
+		ON t."DOLocationID" = zdo."LocationID"
+LIMIT 100;
+
+##
+este valida que las localidades incluidas en la tabla de registro existan en la tabla del catálogo de localidades
+SELECT
+	tpep_pickup_datetime,
+	tpep_dropoff_datetime,
+	total_amount,
+	"PULocationID",
+	"DOLocationID"
+FROM
+	yellow_taxi_trip t 
+WHERE
+	"PULocationID" NOT IN (SELECT "LocationID" FROM zones)
+LIMIT 100;
+
+
+
+
