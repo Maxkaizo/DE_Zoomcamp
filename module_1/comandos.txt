@@ -90,3 +90,7 @@ docker run -it \
     --db=ny_taxi \
     --table_name=yellow_taxi_trip \
     --url=${URL}
+
+
+export GOOGLE_CREDENTIALS='/home/maxkaizo/DE_Zoomcamp/module_1/terraform_gcp/terrademo/keys/my-creds.json'
+echo $GOOGLE_CREDENTIALS
