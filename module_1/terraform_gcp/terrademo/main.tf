@@ -8,13 +8,13 @@ terraform {
 }
 
 provider "google" {
-  project = "dataeng-448500"
-  region  = "us-central1"
+  project = var.project
+  region  = var.region
 }
 
 resource "google_storage_bucket" "demo-google_storage_bucket" {
-  name          = "dataeng-448500-terra-bucket-demo"
-  location      = "US"
+  name          = var.gcs_bucket_name
+  location      = var.location
   force_destroy = true
 
   lifecycle_rule {
@@ -25,4 +25,12 @@ resource "google_storage_bucket" "demo-google_storage_bucket" {
       type = "AbortIncompleteMultipartUpload"
     }
   }
+}
+
+# Crear un dataset de BigQuery
+resource "google_bigquery_dataset" "dataset_example" {
+  dataset_id    = var.bq_dataset_name # Nombre del dataset
+  location      = var.location        # Ubicación del dataset (por ejemplo, "US" o "EU")
+  friendly_name = "Dataset de Ejemplo"
+  description   = "Un dataset de ejemplo creado con Terraform"
 }
