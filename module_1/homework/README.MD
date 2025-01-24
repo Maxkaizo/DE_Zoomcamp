@@ -29,6 +29,19 @@ I've loaded the data files with this notebook [data_ingest.ipynb](https://github
 
 It seems that the selected version of pgadmin is not able to show multiple outputs at the same time
 
+## Question 4
+
+Answer = 2019-10-31
+
+![alt text](image-2.png)
+
+## Question 5
+
+Answer = East Harlem North, East Harlem South, Morningside Heights
+
+![alt text](image-3.png)
+
+
 
 
 

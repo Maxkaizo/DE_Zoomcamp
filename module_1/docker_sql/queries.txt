@@ -45,6 +45,21 @@ WHERE
 	"PULocationID" NOT IN (SELECT "LocationID" FROM zones)
 LIMIT 100;
 
-
+## homework
+SELECT
+	zpu."Zone" as pickup_location,
+	SUM(total_amount) as added_amount
+FROM
+	green_taxi_trips t 
+	JOIN zones zpu
+		ON t."PULocationID" = zpu."LocationID"
+WHERE
+	CAST(lpep_pickup_datetime as DATE) = '2019-10-18'
+GROUP BY
+	pickup_location
+HAVING
+	SUM(total_amount) > 13000
+ORDER BY
+	added_amount desc
 
 
