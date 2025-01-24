@@ -18,7 +18,18 @@ What's the version of pip in the image?
 
 ### Preparation
 
-I've loaded the zones file with this notebook [data_ingest.ipynb](https://github.com/Maxkaizo/DE_Zoomcamp/blob/main/module_1/homework/data_ingest.ipynb)
+I've loaded the data files with this notebook [data_ingest.ipynb](https://github.com/Maxkaizo/DE_Zoomcamp/blob/main/module_1/homework/data_ingest.ipynb)
+
+
+### Answer
+
+104,838; 199,013; 109,645; 27,688; 35,202
+
+![alt text](image-1.png)
+
+It seems that the selected version of pgadmin is not able to show multiple outputs at the same time
+
+
 
 
 
