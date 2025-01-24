@@ -10,4 +10,14 @@ What's the version of pip in the image?
 
  ![alt text](image.png)
 
- 
+ ## Question 2
+
+ Answer = postgres:5433
+
+ ## Question 3
+
+### Preparation
+
+I've loaded the zones file with this notebook [zones_ingest.ipynb]()
+
+
