@@ -45,7 +45,14 @@ WHERE
 	"PULocationID" NOT IN (SELECT "LocationID" FROM zones)
 LIMIT 100;
 
+
+
+
+
+
 ## homework
+
+
 SELECT
 	zpu."Zone" as pickup_location,
 	SUM(total_amount) as added_amount

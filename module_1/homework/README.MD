@@ -14,6 +14,9 @@ What's the version of pip in the image?
 
  Answer = postgres:5433
 
+![alt text](image-4.png)
+
+
  ## Question 3
 
 ### Preparation
@@ -40,6 +43,25 @@ Answer = 2019-10-31
 Answer = East Harlem North, East Harlem South, Morningside Heights
 
 ![alt text](image-3.png)
+
+
+## Question 6
+
+
+Answer = JFK Airport
+
+![alt text](image-5.png)
+
+
+## Question 7
+
+Answer = terraform init, terraform apply -auto-approve, terraform destroy
+
+![alt text](image-6.png)
+
+![alt text](image-7.png)
+
+![alt text](image-8.png)
 
 
 
