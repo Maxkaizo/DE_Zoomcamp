@@ -20,3 +20,10 @@
     - green_tripdata_2020-04.csv
     - green_tripdata_04_2020.csv
     - green_tripdata_2020.csv
+
+- Answer: green_tripdata_2020-04.csv
+
+![alt text](image-1.png)
+
+# Question 3
+
