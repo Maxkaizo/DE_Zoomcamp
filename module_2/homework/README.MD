@@ -27,3 +27,54 @@
 
 # Question 3
 
+3. How many rows are there for the Yellow Taxi data for all CSV files in the year 2020?
+
+    - 13,537.299
+    - 24,648,499
+    - 18,324,219
+    - 29,430,127
+
+- Answer: 24,648,499
+
+![alt text](image-2.png)
+
+# Question 4
+
+4. How many rows are there for the Green Taxi data for all CSV files in the year 2020?
+
+    - 5,327,301
+    - 936,199
+    - 1,734,051
+    - 1,342,034
+
+- Answer:  1,734,051
+
+![green_total](image-3.png)
+
+# Question 5
+
+5. How many rows are there for the Yellow Taxi data for the March 2021 CSV file?
+
+    - 1,428,092
+    - 706,911
+    - 1,925,152
+    - 2,561,031
+
+- Answer: 1,925,152
+
+![alt text](image-4.png)
+
+# Question 6
+
+6. How would you configure the timezone to New York in a Schedule trigger?
+
+    - Add a timezone property set to EST in the Schedule trigger configuration
+    - Add a timezone property set to America/New_York in the Schedule trigger configuration
+    - Add a timezone property set to UTC-5 in the Schedule trigger configuration
+    - Add a location property set to New_York in the Schedule trigger configuration
+
+- Answer: America/New_York 
+
+https://kestra.io/docs/workflow-components/triggers/schedule-trigger
+
+![alt text](image-5.png)
