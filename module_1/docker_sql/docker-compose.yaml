@@ -17,5 +17,5 @@ services:
     volumes:
       - "/home/maxkaizo/DE_Zoomcamp/module_1/docker_sql/pg_data:/var/lib/pgadmin"
     ports:
-      - "8080:80"
+      - "8090:80"
     # command: ["sh", "-c", "chown -R 5050:5050 /var/lib/pgadmin && /entrypoint.sh"]
