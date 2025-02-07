@@ -44,3 +44,48 @@ Answer: - 0 MB for the External Table and 155.12 MB for the Materialized Table
 ![alt text](image-6.png)
 
 ![alt text](image-5.png)
+
+# Question 3
+
+Write a query to retrieve the PULocationID from the table (not the external table) in BigQuery. Now write a query to retrieve the PULocationID and DOLocationID on the same table. Why are the estimated number of Bytes different?
+
+- BigQuery is a columnar database, and it only scans the specific columns requested in the query. Querying two columns (PULocationID, DOLocationID) requires reading more data than querying one column (PULocationID), leading to a higher estimated number of bytes processed.
+- BigQuery duplicates data across multiple storage partitions, so selecting two columns instead of one requires scanning the table twice, doubling the estimated bytes processed.
+- BigQuery automatically caches the first queried column, so adding a second column increases processing time but does not affect the estimated bytes scanned.
+- When selecting multiple columns, BigQuery performs an implicit join operation between them, increasing the estimated bytes processed
+
+Answer: BigQuery is a columnar database, and it only scans the specific columns requested in the query. Querying two columns (PULocationID, DOLocationID) requires reading more data than querying one column (PULocationID), leading to a higher estimated number of bytes processed.
+
+![alt text](image-7.png)
+
+![alt text](image-8.png)
+
+# Question 4
+
+How many records have a fare_amount of 0?
+
+- 128,210
+- 546,578
+- 20,188,016
+- 8,333
+
+Answer: 8,333
+
+![alt text](image-9.png)
+
+# Question 5
+
+What is the best strategy to make an optimized table in Big Query if your query will always filter based on tpep_dropoff_datetime and order the results by VendorID (Create a new table with this strategy)
+
+- Partition by tpep_dropoff_datetime and Cluster on VendorID
+- Cluster on by tpep_dropoff_datetime and Cluster on VendorID
+- Cluster on tpep_dropoff_datetime Partition by VendorID
+- Partition by tpep_dropoff_datetime and Partition by VendorID
+
+Answer: Partition by tpep_dropoff_datetime and Cluster on VendorID
+
+![alt text](image-10.png)
+
+
+
+
