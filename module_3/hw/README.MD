@@ -106,5 +106,24 @@ Answer: 310.24 MB for non-partitioned table and 26.84 MB for the partitioned tab
 
 ![alt text](image-12.png)
 
+# Question 7 
 
+Where is the data stored in the External Table you created?
 
+- Big Query
+- Container Registry
+- GCP Bucket
+- Big Table
+
+Answer: GCP Bucket
+
+# Question 8
+
+It is best practice in Big Query to always cluster your data:
+
+- True
+- False
+
+Answer: False
+
+![alt text](image-13.png)
