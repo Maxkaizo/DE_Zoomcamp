@@ -20,12 +20,12 @@ variable "location" {
 
 variable "bq_dataset_name" {
   description = "My BigQuery Dataset Name"
-  default     = "demo_dataset"
+  default     = "dataeng_448500_hw_3"
 }
 
 variable "gcs_bucket_name" {
   description = "My Storage Bucket Name"
-  default     = "dataeng-448500-terra-bucket-demo"
+  default     = "dataeng-448500-hw-3"
 }
 
 variable "gcs_storage_class" {
