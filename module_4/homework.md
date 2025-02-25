@@ -33,10 +33,11 @@ Let's try it
 I'll edit my main.tf and variables.tf files to create an environment for week 4 homework
 
 ![alt text](image.png)
-<img src="imagen.png" alt="variables.tf file" width="300" height="200">
 
 `terraform init`
+
 `terraform plan`
+
 `terraform apply`
 
 
