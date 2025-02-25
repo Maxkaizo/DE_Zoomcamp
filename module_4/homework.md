@@ -30,14 +30,21 @@ Let's try it
 
 ### Create a bucket and a dataset
 
-I'll edit my main.tf and variables.tf files to create an environment for week 4 homework
+- I'll edit my main.tf and variables.tf files to create an environment for week 4 homework
 
 ![alt text](image.png)
+
+- Once edit I'll create my infra with
 
 `terraform init`
 
 `terraform plan`
 
 `terraform apply`
+
+```bash
+terraform init
+terraform plan
+terraform apply
 
 
