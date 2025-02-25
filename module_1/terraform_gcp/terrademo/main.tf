@@ -13,7 +13,7 @@ provider "google" {
   region      = var.region
 }
 
-resource "google_storage_bucket" "hw3_dataeng" {
+resource "google_storage_bucket" "hw4_dataeng" {
   name          = var.gcs_bucket_name
   location      = var.location
   force_destroy = true
@@ -29,7 +29,7 @@ resource "google_storage_bucket" "hw3_dataeng" {
 }
 
 # Crear un dataset de BigQuery
-resource "google_bigquery_dataset" "hw3_dataeng" {
+resource "google_bigquery_dataset" "hw4_dataeng" {
   dataset_id    = var.bq_dataset_name # Nombre del dataset
   location      = var.location        # Ubicación del dataset (por ejemplo, "US" o "EU")
   friendly_name = "Dataset de Ejemplo"

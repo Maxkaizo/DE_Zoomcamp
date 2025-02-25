@@ -28,7 +28,7 @@ I guess for this task I can use:
 
 Let's try it
 
-### Create a bucket and a dataset
+## Create a bucket and a dataset with Terraform
 
 - I'll edit my main.tf and variables.tf files to create an environment for week 4 homework
 
@@ -36,15 +36,47 @@ Let's try it
 
 - Once edit I'll create my infra with
 
-`terraform init`
-
-`terraform plan`
-
-`terraform apply`
-
 ```bash
 terraform init
 terraform plan
 terraform apply
+```
+![alt text](image-4.png)
+
+## Move files from repo to GCP Sotrage (bucket)
+
+I'll have to start my Kestra server, run a backfill for green and yellow sets and create a flow for FHV Set.
+
+- Check if Kestra server is running and start it if not
+
+![alt text](image-2.png)
+
+- Now that the server is running, I'l adjust the gcp infra definition within kestra by editing the 04_gcp_kv.yaml file (Thanks to Manuel Guerra for the reminder and his useful notes)
+
+![alt text](image-3.png)
+
+
+- I'll test the flow with only one file
+
+
+At this point I encountered an issue, as I didn't know that in the terraform configuration file, the location is only used for big query (or I forgot it) and had some problems, because I left it as US, it was fixed when I changed it to us-central1
+
+![alt text](image-5.png)
+
+Once this was fixed, I could run fine the loading process for the first file
+
+![alt text](image-6.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
