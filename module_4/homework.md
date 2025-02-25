@@ -67,6 +67,25 @@ Once this was fixed, I could run fine the loading process for the first file
 
 ![alt text](image-6.png)
 
+So now, I'm using the backfill process to extract all files for Green Taxis
+
+Green trip data loaded succesfuly
+
+![alt text](image-7.png)
+
+Let's do the Yellow trip data
+
+
+
+
+
+
+My next step is to load all yellow files, but I need to make sure how can I load all FHV files
+My plan is to load one example file to compare the fields
+
+
+
+
 
 
 
