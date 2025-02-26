@@ -167,6 +167,32 @@ I have the configuration now, and I shloud initialize on dbt
 ![alt text](image-16.png)
 
 
+## Side note
+
+While I was creating the models on dbt, I identified that in the lesson's models Victoria creates a CTE to identify and filter out duplicated records, but she is only using 2 columns (vendorid, lpep_pickup_datetime), maybe this is not the best way as it could mark some records as duplicated when they're not.
+
+I tested the difference using 2 and 3 fields in fhv and it confirms my suspision, so I'll keep 3
+
+Using 2 columns, 197,124 records were identified as duplicated, including some incorrect examples
+
+![alt text](image-18.png)
+
+and Using 3 columns only 23,165 records were identified as duplicated
+
+![alt text](image-17.png)
+
+
+## Create models
+
+I've created my [models](https://github.com/Maxkaizo/DE_Zoomcamp/tree/main/module_4/models).
+
+And it looks like this
+![alt text](image-19.png)
+
+
+
+
+
 
 
 
