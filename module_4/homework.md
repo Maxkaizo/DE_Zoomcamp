@@ -96,6 +96,8 @@ So I used this [tutorial](https://dlthub.com/docs/tutorial/rest-api) as a refres
 
 ![alt text](image-9.png)
 
+ ## Ingest data to BigQuery
+
 So now that I have all the files loaded, I can create my external table and then materialize a new one to use it as source for dbt
 
 ![alt text](image-10.png)
@@ -154,8 +156,15 @@ let's remove files and validate
 
 Now I have the right amount of records in each dataset, I can start the homework now XD
 
+# Build staging models in dbt
 
+For this I have to create a new project on dbt
 
+![alt text](image-15.png)
+
+I have the configuration now, and I shloud initialize on dbt
+
+![alt text](image-16.png)
 
 
 
