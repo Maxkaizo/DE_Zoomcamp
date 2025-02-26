@@ -43,7 +43,7 @@ terraform apply
 ```
 ![alt text](image-4.png)
 
-## Move files from repo to GCP Sotrage (bucket)
+## Move files from repo to GCP Storage (bucket)
 
 I'll have to start my Kestra server, run a backfill for green and yellow sets and create a flow for FHV Set.
 
@@ -143,6 +143,19 @@ At this point I've encountered a problem, as it seems that some files have incom
 I tryed to re-download the file, but the problem comes from the source file, I also checked the rest of the files, so I'll fix it locally and then I'll reload it to my bucket
 
 ![alt text](image-12.png)
+
+![alt text](image-13.png)
+
+Turns out that I made a mistake, because the instructions required fhv files only for 2019, not for 2020
+
+let's remove files and validate
+
+![alt text](image-14.png)
+
+Now I have the right amount of records in each dataset, I can start the homework now XD
+
+
+
 
 
 
