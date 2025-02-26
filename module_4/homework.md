@@ -1,4 +1,6 @@
-# Getting things ready!
+# Preparation
+
+## Getting things ready!
 
 For this homework, you will need the following datasets:
 
@@ -18,7 +20,7 @@ Make sure you, at least, have them in GCS with a External Table OR a Native Tabl
 
 Note: If you don't have access to GCP, you can spin up a local Postgres instance and ingest the datasets above
 
-## Notes
+### Notes
 
 I guess for this task I can use:
 
@@ -28,7 +30,7 @@ I guess for this task I can use:
 
 Let's try it
 
-## Create a bucket and a dataset with Terraform
+### Create a bucket and a dataset with Terraform
 
 - I'll edit my main.tf and variables.tf files to create an environment for week 4 homework
 
@@ -43,7 +45,7 @@ terraform apply
 ```
 ![alt text](image-4.png)
 
-## Move files from repo to GCP Storage (bucket)
+### Move files from repo to GCP Storage (bucket)
 
 I'll have to start my Kestra server, run a backfill for green and yellow sets and create a flow for FHV Set.
 
@@ -96,7 +98,7 @@ So I used this [tutorial](https://dlthub.com/docs/tutorial/rest-api) as a refres
 
 ![alt text](image-9.png)
 
- ## Ingest data to BigQuery
+### Ingest data to BigQuery
 
 So now that I have all the files loaded, I can create my external table and then materialize a new one to use it as source for dbt
 
@@ -156,7 +158,7 @@ let's remove files and validate
 
 Now I have the right amount of records in each dataset, I can start the homework now XD
 
-# Build staging models in dbt
+### Build staging models in dbt
 
 For this I have to create a new project on dbt
 
@@ -167,7 +169,7 @@ I have the configuration now, and I shloud initialize on dbt
 ![alt text](image-16.png)
 
 
-## Side note
+#### Side note
 
 While I was creating the models on dbt, I identified that in the lesson's models Victoria creates a CTE to identify and filter out duplicated records, but she is only using 2 columns (vendorid, lpep_pickup_datetime), maybe this is not the best way as it could mark some records as duplicated when they're not.
 
@@ -182,17 +184,64 @@ and Using 3 columns only 23,165 records were identified as duplicated
 ![alt text](image-17.png)
 
 
-## Create models
+### Create models
 
 I've created my [models](https://github.com/Maxkaizo/DE_Zoomcamp/tree/main/module_4/models).
 
 And it looks like this
 ![alt text](image-19.png)
 
+Now we can start with the homework
+
+# Question 1: Understanding dbt model resolution
+
+Provided you've got the following sources.yaml
+```yaml
+version: 2
+
+sources:
+  - name: raw_nyc_tripdata
+    database: "{{ env_var('DBT_BIGQUERY_PROJECT', 'dtc_zoomcamp_2025') }}"
+    schema:   "{{ env_var('DBT_BIGQUERY_SOURCE_DATASET', 'raw_nyc_tripdata') }}"
+    tables:
+      - name: ext_green_taxi
+      - name: ext_yellow_taxi
+```
+
+with the following env variables setup where `dbt` runs:
+```shell
+export DBT_BIGQUERY_PROJECT=myproject
+export DBT_BIGQUERY_DATASET=my_nyc_tripdata
+```
+
+What does this .sql model compile to?
+```sql
+select * 
+from {{ source('raw_nyc_tripdata', 'ext_green_taxi' ) }}
+```
+
+- `select * from dtc_zoomcamp_2025.raw_nyc_tripdata.ext_green_taxi`
+- `select * from dtc_zoomcamp_2025.my_nyc_tripdata.ext_green_taxi`
+- `select * from myproject.raw_nyc_tripdata.ext_green_taxi`
+- `select * from myproject.my_nyc_tripdata.ext_green_taxi`
+- `select * from dtc_zoomcamp_2025.raw_nyc_tripdata.green_taxi`
 
 
+## Answer:
 
+Ok, so for this question, I can rationalize the answer, but I can also try it in a test model, I'll do both
 
+- select * from myproject.my_nyc_tripdata.ext_green_taxi
 
+My rationale is that as the environmental variables are defined at a project level, the compilation process should use them, the second argument at the sorices definition is used in case that there is no variable defined, lets try it
 
+![alt text](image-20.png)
+
+Ok, I missed that tricky one, because even if the dataset env variable is invoked, the names do not match, so the compiling process uses the default stated at the sources.yaml file
+
+![alt text](image-21.png)
+
+The final answer is:
+
+- select * from myproject.raw_nyc_tripdata.ext_green_taxi
 
