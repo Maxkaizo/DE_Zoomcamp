@@ -92,10 +92,15 @@ I want to do it this way, but I cant remember how could I do it, I'd have to rew
 
 I guess for me is better to do it this way, so I can refresh the concpets and I would leverage all the solutions from the previous lessons
 
-So I used this [tutorial](https://dlthub.com/docs/tutorial/rest-api) as a refresher and with chatgpt help, I managed to create this [script](https://github.com/Maxkaizo/DE_Zoomcamp/blob/main/module_4/fhv_dlt.py) to do the Extract and Load phase with dlt 
+So I used this [tutorial](https://dlthub.com/docs/tutorial/rest-api) as a refresher and (with chatgpt help), I managed to create this [script](https://github.com/Maxkaizo/DE_Zoomcamp/blob/main/module_4/fhv_dlt.py) to do the Extract and Load phase with dlt 
 
+![alt text](image-9.png)
 
-## referencias de clase de big query
+So now that I have all the files loaded, I can create my external table and then materialize a new one to use it as source for dbt
+
+![alt text](image-10.png)
+
+(I'm using lesson 3 instructions)
 https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/03-data-warehouse/big_query.sql
 
 ```SQL
@@ -107,7 +112,6 @@ OPTIONS (
   uris = ['gs://nyc-tl-data/trip data/yellow_tripdata_2019-*.csv', 'gs://nyc-tl-data/trip data/yellow_tripdata_2020-*.csv']
 );
 
-
 -- Create a non partitioned table from external table
 CREATE OR REPLACE TABLE taxi-rides-ny.nytaxi.yellow_tripdata_non_partitioned AS
 SELECT * FROM taxi-rides-ny.nytaxi.external_yellow_tripdata;
@@ -118,12 +122,27 @@ CREATE OR REPLACE TABLE taxi-rides-ny.nytaxi.yellow_tripdata_partitioned
 PARTITION BY
   DATE(tpep_pickup_datetime) AS
 SELECT * FROM taxi-rides-ny.nytaxi.external_yellow_tripdata;
+
+
+CREATE OR REPLACE EXTERNAL TABLE `dataeng-448500.dataeng_448500_hw_4.fhv_tripdata_ext`
+OPTIONS (
+  format = 'CSV',
+  uris = ['gs://dataeng-448500-hw-4/fhv_tripdata_2019-*.csv', 'gs://dataeng-448500-hw-4/fhv_tripdata_2020-*.csv']
+);
+
+CREATE OR REPLACE TABLE `dataeng-448500.dataeng_448500_hw_4.fhv_tripdata`
+PARTITION BY
+  DATE(pickup_datetime) AS
+SELECT * FROM `dataeng-448500.dataeng_448500_hw_4.fhv_tripdata_ext`
 ```
 
-a ver
+At this point I've encountered a problem, as it seems that some files have incomplete lines, as stated in this error
 
+![alt text](image-11.png)
 
+I tryed to re-download the file, but the problem comes from the source file, I also checked the rest of the files, so I'll fix it locally and then I'll reload it to my bucket
 
+![alt text](image-12.png)
 
 
 
