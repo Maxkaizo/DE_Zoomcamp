@@ -81,19 +81,18 @@ Yellow trip data loaded succesfuly
 
 How can I Load FHV data? 
 
-Manualy? 
+- Manualy? 
 Download 24 files, upload to a gc bucket and then create an external table and ingest every file 
 
-Through a Kestra workflow
+- Through a Kestra workflow
 I can edit the green and yellow flow file and replicate the process, not much work, y only have to pay attention to the flow definition, in fact I could only add it as a third option in the existent file
 
-Through dlt?
+- Through dlt?
 I want to do it this way, but I cant remember how could I do it, I'd have to rewatch the webinar and 
 
-I gues for me is better to do it this way, so I can refresh the concpets and I would leverage all the solutions from the previous lessons
+I guess for me is better to do it this way, so I can refresh the concpets and I would leverage all the solutions from the previous lessons
 
-My first test would be to download a file from the repo and to upload it to gcp
-
+So I used this [tutorial](https://dlthub.com/docs/tutorial/rest-api) as a refresher and with chatgpt help, I managed to create this [script](https://github.com/Maxkaizo/DE_Zoomcamp/blob/main/module_4/fhv_dlt.py) to do the Extract and Load phase with dlt 
 
 
 ## referencias de clase de big query
