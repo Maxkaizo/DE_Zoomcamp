@@ -182,6 +182,16 @@ and Using 3 columns only 23,165 records were identified as duplicated
 ![alt text](image-17.png)
 
 
+## Create models
+
+I've created my [models](https://github.com/Maxkaizo/DE_Zoomcamp/tree/main/module_4/models).
+
+And it looks like this
+![alt text](image-19.png)
+
+
+
+
 
 
 
