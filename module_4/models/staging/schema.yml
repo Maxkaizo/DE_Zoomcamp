@@ -14,3 +14,13 @@ sources:
       - name: fhv_tripdata
         description: "Datos de viajes en taxis fhv de BigQuery"
 
+models:
+  - name: stg_green_tripdata
+    description: ""
+
+  - name: stg_yellow_tripdata
+    description: ""
+
+  - name: stg_fhv_tripdata
+    description: ""
+
