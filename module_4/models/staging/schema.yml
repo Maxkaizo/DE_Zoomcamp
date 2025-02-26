@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: staging # Alias que usaremos en los modelos dbt
+    database: dataeng-448500 # Nombre del proyecto en BigQuery
+    schema: dataeng_448500_hw_4 # Nombre del dataset en BigQuery
+    tables:
+      - name: green_tripdata
+        description: "Datos de viajes en taxis verdes de BigQuery"
+
+      - name: yellow_tripdata
+        description: "Datos de viajes en taxis amarillos de BigQuery"
+
+      - name: fhv_tripdata
+        description: "Datos de viajes en taxis fhv de BigQuery"
