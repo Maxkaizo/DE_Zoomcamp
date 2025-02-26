@@ -75,22 +75,53 @@ Green trip data loaded succesfuly
 
 Let's do the Yellow trip data
 
+![alt text](image-8.png)
+
+Yellow trip data loaded succesfuly
+
+How can I Load FHV data? 
+
+Manualy? 
+Download 24 files, upload to a gc bucket and then create an external table and ingest every file 
+
+Through a Kestra workflow
+I can edit the green and yellow flow file and replicate the process, not much work, y only have to pay attention to the flow definition, in fact I could only add it as a third option in the existent file
+
+Through dlt?
+I want to do it this way, but I cant remember how could I do it, I'd have to rewatch the webinar and 
+
+I gues for me is better to do it this way, so I can refresh the concpets and I would leverage all the solutions from the previous lessons
+
+My first test would be to download a file from the repo and to upload it to gcp
 
 
 
+## referencias de clase de big query
+https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/03-data-warehouse/big_query.sql
+
+```SQL
+
+-- Creating external table referring to gcs path
+CREATE OR REPLACE EXTERNAL TABLE `taxi-rides-ny.nytaxi.external_yellow_tripdata`
+OPTIONS (
+  format = 'CSV',
+  uris = ['gs://nyc-tl-data/trip data/yellow_tripdata_2019-*.csv', 'gs://nyc-tl-data/trip data/yellow_tripdata_2020-*.csv']
+);
 
 
-My next step is to load all yellow files, but I need to make sure how can I load all FHV files
-My plan is to load one example file to compare the fields
+-- Create a non partitioned table from external table
+CREATE OR REPLACE TABLE taxi-rides-ny.nytaxi.yellow_tripdata_non_partitioned AS
+SELECT * FROM taxi-rides-ny.nytaxi.external_yellow_tripdata;
 
 
+-- Create a partitioned table from external table
+CREATE OR REPLACE TABLE taxi-rides-ny.nytaxi.yellow_tripdata_partitioned
+PARTITION BY
+  DATE(tpep_pickup_datetime) AS
+SELECT * FROM taxi-rides-ny.nytaxi.external_yellow_tripdata;
+```
 
-
-
-
-
-
-
+a ver
 
 
 

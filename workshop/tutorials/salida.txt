@@ -1,0 +1,139 @@
+2025-02-25 11:31:08,980|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5311070760. Please provide right paginator manually.
+2025-02-25 11:31:09,603|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5311070280. Please provide right paginator manually.
+2025-02-25 11:31:09,828|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310febe50. Please provide right paginator manually.
+2025-02-25 11:31:10,130|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5311070040. Please provide right paginator manually.
+2025-02-25 11:31:10,442|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310ff02b0. Please provide right paginator manually.
+2025-02-25 11:31:10,655|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310f37b50. Please provide right paginator manually.
+2025-02-25 11:31:10,876|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310f37e20. Please provide right paginator manually.
+2025-02-25 11:31:11,185|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310eea7c0. Please provide right paginator manually.
+2025-02-25 11:31:11,494|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310e85970. Please provide right paginator manually.
+2025-02-25 11:31:11,703|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310d9c6a0. Please provide right paginator manually.
+2025-02-25 11:31:11,923|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310febfd0. Please provide right paginator manually.
+2025-02-25 11:31:12,162|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310d5dd00. Please provide right paginator manually.
+2025-02-25 11:31:12,374|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5311b4d040. Please provide right paginator manually.
+2025-02-25 11:31:12,602|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310f6ec40. Please provide right paginator manually.
+2025-02-25 11:31:12,839|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310f7f7f0. Please provide right paginator manually.
+2025-02-25 11:31:13,047|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f53110af8b0. Please provide right paginator manually.
+2025-02-25 11:31:13,359|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310e56fa0. Please provide right paginator manually.
+2025-02-25 11:31:13,577|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f53110b2730. Please provide right paginator manually.
+2025-02-25 11:31:13,780|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f53110706d0. Please provide right paginator manually.
+2025-02-25 11:31:13,981|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310f2e970. Please provide right paginator manually.
+2025-02-25 11:31:14,206|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5311162f70. Please provide right paginator manually.
+2025-02-25 11:31:14,499|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5311000040. Please provide right paginator manually.
+2025-02-25 11:31:14,800|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5311162ee0. Please provide right paginator manually.
+2025-02-25 11:31:15,007|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310ff7610. Please provide right paginator manually.
+2025-02-25 11:31:15,238|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f53112021f0. Please provide right paginator manually.
+2025-02-25 11:31:15,536|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310fadfa0. Please provide right paginator manually.
+2025-02-25 11:31:15,758|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310d88070. Please provide right paginator manually.
+2025-02-25 11:31:15,932|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310ff7550. Please provide right paginator manually.
+2025-02-25 11:31:16,142|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310e86550. Please provide right paginator manually.
+2025-02-25 11:31:16,358|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310c759d0. Please provide right paginator manually.
+2025-02-25 11:31:16,550|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310ed28b0. Please provide right paginator manually.
+2025-02-25 11:31:16,761|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310c4b280. Please provide right paginator manually.
+2025-02-25 11:31:17,074|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310d88790. Please provide right paginator manually.
+2025-02-25 11:31:17,275|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310c22a00. Please provide right paginator manually.
+2025-02-25 11:31:17,574|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310b8cfa0. Please provide right paginator manually.
+2025-02-25 11:31:17,788|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310b91400. Please provide right paginator manually.
+2025-02-25 11:31:17,997|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310bda6a0. Please provide right paginator manually.
+2025-02-25 11:31:18,234|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310af0490. Please provide right paginator manually.
+2025-02-25 11:31:18,398|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310b8c700. Please provide right paginator manually.
+2025-02-25 11:31:18,614|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310c4b4c0. Please provide right paginator manually.
+2025-02-25 11:31:18,816|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310cc82b0. Please provide right paginator manually.
+2025-02-25 11:31:19,015|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310c22520. Please provide right paginator manually.
+2025-02-25 11:31:19,211|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310b8c1f0. Please provide right paginator manually.
+2025-02-25 11:31:19,414|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f53111b98e0. Please provide right paginator manually.
+2025-02-25 11:31:19,625|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310d88fd0. Please provide right paginator manually.
+2025-02-25 11:31:19,836|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310c222b0. Please provide right paginator manually.
+2025-02-25 11:31:20,031|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310b8c0d0. Please provide right paginator manually.
+2025-02-25 11:31:20,237|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310c22400. Please provide right paginator manually.
+2025-02-25 11:31:20,443|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f53110af310. Please provide right paginator manually.
+2025-02-25 11:31:20,625|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f53111d3940. Please provide right paginator manually.
+2025-02-25 11:31:20,805|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310cc8310. Please provide right paginator manually.
+2025-02-25 11:31:21,062|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310bbefa0. Please provide right paginator manually.
+2025-02-25 11:31:21,256|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f53110af4c0. Please provide right paginator manually.
+2025-02-25 11:31:21,480|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310bbe6a0. Please provide right paginator manually.
+2025-02-25 11:31:21,638|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310dd76d0. Please provide right paginator manually.
+2025-02-25 11:31:21,844|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310bbedf0. Please provide right paginator manually.
+2025-02-25 11:31:22,053|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310f37280. Please provide right paginator manually.
+2025-02-25 11:31:22,257|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310fd4880. Please provide right paginator manually.
+2025-02-25 11:31:22,475|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310c27070. Please provide right paginator manually.
+2025-02-25 11:31:22,616|[WARNING]|107209|139995420153344|dlt|client.py|detect_paginator:298|Fallback paginator used: SinglePagePaginator at 7f5310d67670. Please provide right paginator manually.
+Traceback (most recent call last):
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/extract/pipe_iterator.py", line 277, in _get_source_item
+    pipe_item = next(gen)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/sources/rest_api/__init__.py", line 375, in paginate_dependent_resource
+    for child_page in client.paginate(
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/sources/helpers/rest_client/client.py", line 224, in paginate
+    response = self._send_request(request, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/sources/helpers/rest_client/client.py", line 140, in _send_request
+    return self.session.send(prepared_request, **send_kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/sources/helpers/requests/session.py", line 61, in send
+    return super().send(request, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/requests/sessions.py", line 710, in send
+    r = dispatch_hook("response", hooks, r, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/requests/hooks.py", line 30, in dispatch_hook
+    _hook_data = hook(hook_data, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/sources/helpers/rest_client/client.py", line 315, in raise_for_status
+    response.raise_for_status()
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: rate limit exceeded for url: https://api.github.com/repos/dlt-hub/dlt/issues/2234/comments?per_page=100
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/pipeline/pipeline.py", line 470, in extract
+    self._extract_source(
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/pipeline/pipeline.py", line 1238, in _extract_source
+    load_id = extract.extract(
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/extract/extract.py", line 435, in extract
+    self._extract_single_source(
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/extract/extract.py", line 358, in _extract_single_source
+    for pipe_item in pipes:
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/extract/pipe_iterator.py", line 162, in __next__
+    pipe_item = self._get_source_item()
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/extract/pipe_iterator.py", line 307, in _get_source_item
+    raise ResourceExtractionError(pipe.name, gen, str(ex), "generator") from ex
+dlt.extract.exceptions.ResourceExtractionError: In processing pipe issue_comments: extraction of resource issue_comments in generator paginate_dependent_resource caused an exception: 403 Client Error: rate limit exceeded for url: https://api.github.com/repos/dlt-hub/dlt/issues/2234/comments?per_page=100
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/maxkaizo/DE_Zoomcamp/workshop/tutorials/rest_api_pipeline.py", line 157, in <module>
+    load_github()
+  File "/home/maxkaizo/DE_Zoomcamp/workshop/tutorials/rest_api_pipeline.py", line 109, in load_github
+    load_info = pipeline.run(github_source())
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/pipeline/pipeline.py", line 225, in _wrap
+    step_info = f(self, *args, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/pipeline/pipeline.py", line 274, in _wrap
+    return f(self, *args, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/pipeline/pipeline.py", line 734, in run
+    self.extract(
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/pipeline/pipeline.py", line 225, in _wrap
+    step_info = f(self, *args, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/pipeline/pipeline.py", line 179, in _wrap
+    rv = f(self, *args, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/pipeline/pipeline.py", line 165, in _wrap
+    return f(self, *args, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/pipeline/pipeline.py", line 274, in _wrap
+    return f(self, *args, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dlt/pipeline/pipeline.py", line 491, in extract
+    raise PipelineStepFailed(
+dlt.pipeline.exceptions.PipelineStepFailed: Pipeline execution failed at stage extract when processing package 1740504667.9647126 with exception:
+
+<class 'dlt.extract.exceptions.ResourceExtractionError'>
+In processing pipe issue_comments: extraction of resource issue_comments in generator paginate_dependent_resource caused an exception: 403 Client Error: rate limit exceeded for url: https://api.github.com/repos/dlt-hub/dlt/issues/2234/comments?per_page=100
