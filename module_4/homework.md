@@ -156,8 +156,15 @@ let's remove files and validate
 
 Now I have the right amount of records in each dataset, I can start the homework now XD
 
+# Build staging models in dbt
 
+For this I have to create a new project on dbt
 
+![alt text](image-15.png)
+
+I have the configuration now, and I shloud initialize on dbt
+
+![alt text](image-16.png)
 
 
 
