@@ -96,6 +96,8 @@ So I used this [tutorial](https://dlthub.com/docs/tutorial/rest-api) as a refres
 
 ![alt text](image-9.png)
 
+ ## Ingest data to BigQuery
+
 So now that I have all the files loaded, I can create my external table and then materialize a new one to use it as source for dbt
 
 ![alt text](image-10.png)

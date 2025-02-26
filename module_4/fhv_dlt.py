@@ -48,7 +48,7 @@ def download_files_from_github():
     assets = release_data.get("assets", [])
 
     # Filtramos solo archivos de 2019 y 2020
-    filtered_assets = [asset for asset in assets if "2019" in asset["name"] or "2020" in asset["name"]]
+    filtered_assets = [asset for asset in assets if "2019" in asset["name"]]# or "2020" in asset["name"]]
 
     if not filtered_assets:
         print("⚠ No se encontraron archivos para 2019 o 2020.")
