@@ -393,3 +393,52 @@ The answer is
 
 this was a tricky one also, I should study and practice a lot with this kind of examples
 
+
+### Question 6: P97/P95/P90 Taxi Monthly Fare
+
+1. Create a new model `fct_taxi_trips_monthly_fare_p95.sql`
+2. Filter out invalid entries (`fare_amount > 0`, `trip_distance > 0`, and `payment_type_description in ('Cash', 'Credit Card')`)
+3. Compute the **continous percentile** of `fare_amount` partitioning by service_type, year and and month
+
+Now, what are the values of `p97`, `p95`, `p90` for Green Taxi and Yellow Taxi, in April 2020?
+
+- green: {p97: 55.0, p95: 45.0, p90: 26.5}, yellow: {p97: 52.0, p95: 37.0, p90: 25.5}
+- green: {p97: 55.0, p95: 45.0, p90: 26.5}, yellow: {p97: 31.5, p95: 25.5, p90: 19.0}
+- green: {p97: 40.0, p95: 33.0, p90: 24.5}, yellow: {p97: 52.0, p95: 37.0, p90: 25.5}
+- green: {p97: 40.0, p95: 33.0, p90: 24.5}, yellow: {p97: 31.5, p95: 25.5, p90: 19.0}
+- green: {p97: 55.0, p95: 45.0, p90: 26.5}, yellow: {p97: 52.0, p95: 25.5, p90: 19.0}
+
+### Answer
+
+The answer is
+
+- green: {p97: 55.0, p95: 45.0, p90: 26.5}, yellow: {p97: 31.5, p95: 25.5, p90: 19.0}
+
+![alt text](image-25.png)
+
+### Question 7: Top #Nth longest P90 travel time Location for FHV
+
+Prerequisites:
+* Create a staging model for FHV Data (2019), and **DO NOT** add a deduplication step, just filter out the entries where `where dispatching_base_num is not null`
+* Create a core model for FHV Data (`dim_fhv_trips.sql`) joining with `dim_zones`. Similar to what has been done [here](../../../04-analytics-engineering/taxi_rides_ny/models/core/fact_trips.sql)
+* Add some new dimensions `year` (e.g.: 2019) and `month` (e.g.: 1, 2, ..., 12), based on `pickup_datetime`, to the core model to facilitate filtering for your queries
+
+Now...
+1. Create a new model `fct_fhv_monthly_zone_traveltime_p90.sql`
+2. For each record in `dim_fhv_trips.sql`, compute the [timestamp_diff](https://cloud.google.com/bigquery/docs/reference/standard-sql/timestamp_functions#timestamp_diff) in seconds between dropoff_datetime and pickup_datetime - we'll call it `trip_duration` for this exercise
+3. Compute the **continous** `p90` of `trip_duration` partitioning by year, month, pickup_location_id, and dropoff_location_id
+
+For the Trips that **respectively** started from `Newark Airport`, `SoHo`, and `Yorkville East`, in November 2019, what are **dropoff_zones** with the 2nd longest p90 trip_duration ?
+
+- LaGuardia Airport, Chinatown, Garment District
+- LaGuardia Airport, Park Slope, Clinton East
+- LaGuardia Airport, Saint Albans, Howard Beach
+- LaGuardia Airport, Rosedale, Bath Beach
+- LaGuardia Airport, Yorkville East, Greenpoint
+
+
+### Answer
+
+- LaGuardia Airport, Chinatown, Garment District
+
+![alt text](image-26.png)
