@@ -1,0 +1,41 @@
+
+
+export GOOGLE_APPLICATION_CREDENTIALS=/home/maxkaizo/.keys/my-creds.json
+export PATH="${HOME}/bin:${PATH}"
+
+export JAVA_HOME="${HOME}/spark/jdk-11.0.2"
+export PATH="${JAVA_HOME}/bin:$PATH"
+
+
+### versión 3.0.3 ###
+
+export SPARK_HOME="${HOME}/spark/spark-3.0.3-bin-hadoop3.2"
+export PATH="${SPARK_HOME}/bin:$PATH"
+
+### versión 3.5.5 ###
+
+export SPARK_HOME="${HOME}/spark/spark-3.5.5-bin-hadoop3"
+export PATH="${SPARK_HOME}/bin:$PATH"
+
+
+Recordatorio, en ambos casos usé estas instrucciones
+https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/05-batch/setup/linux.md
+
+https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/05-batch/setup/pyspark.md
+
+
+export PYTHONPATH="${SPARK_HOME}/python/:$PYTHONPATH"
+export PYTHONPATH="${SPARK_HOME}/python/lib/py4j-0.10.9.7-src.zip:$PYTHONPATH"
+
+
+
+
+
+
+
+
+
+
+
+
+
