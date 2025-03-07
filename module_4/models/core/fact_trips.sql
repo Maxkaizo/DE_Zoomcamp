@@ -6,12 +6,20 @@
 
 with green_tripdata as (
     select *, 
-        'Green' as service_type
+        'Green' as service_type,
+        extract(year from pickup_datetime) as trip_year,
+        extract(quarter from pickup_datetime) as trip_quarter,
+        extract(month from pickup_datetime) as trip_month,
+        concat(extract(year from pickup_datetime), '/Q', extract(quarter from pickup_datetime)) as year_quarter
     from {{ ref('stg_green_tripdata') }}
 ), 
 yellow_tripdata as (
     select *, 
-        'Yellow' as service_type
+        'Yellow' as service_type,
+        extract(year from pickup_datetime) as trip_year,
+        extract(quarter from pickup_datetime) as trip_quarter,
+        extract(month from pickup_datetime) as trip_month,
+        concat(extract(year from pickup_datetime), '/Q', extract(quarter from pickup_datetime)) as year_quarter
     from {{ ref('stg_yellow_tripdata') }}
 ), 
 trips_unioned as (
@@ -48,7 +56,11 @@ select trips_unioned.tripid,
     trips_unioned.improvement_surcharge, 
     trips_unioned.total_amount, 
     trips_unioned.payment_type, 
-    trips_unioned.payment_type_description
+    trips_unioned.payment_type_description,
+    trips_unioned.trip_year,
+    trips_unioned.trip_quarter,
+    trips_unioned.trip_month,
+    trips_unioned.year_quarter
 from trips_unioned
 inner join dim_zones as pickup_zone
 on trips_unioned.pickup_locationid = pickup_zone.locationid
