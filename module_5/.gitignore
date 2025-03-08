@@ -1,1 +1,4 @@
 zones/
+data/
+spark-warehouse
+*.parquet
