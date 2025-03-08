@@ -12,22 +12,12 @@
 ![alt text](image-3.png)
 
 # Longest Trip
-Reference:
-https://spark.apache.org/docs/4.0.0-preview2/api/python/reference/pyspark.sql/api/pyspark.sql.functions.timestamp_diff.html
+![alt text](image-4.png)
 
+https://stackoverflow.com/questions/60386256/sparksql-difference-between-two-time-stamps-in-minutes
 
+# User interface
+![alt text](image-5.png)
 
-
-objetivo:
-sacar el viaje con mayor duración en horas
-
-
-plan a
-
-agregar una columna que sea la duración con la función timestamp_diff
-
-habilitar como tabla temporal
-
-consultar el máximo de la tabla temporal
-
-(siento que esta medio rústico, pero intentaré lograrlo y luego sacarlo con chatgpt)
+# Least Frequent PULocation
+![alt text](image-6.png)
