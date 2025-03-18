@@ -33,3 +33,10 @@ True
 ![alt text](image-3.png)
 
 
+# Question 5
+
+- Longest unbroken streak
+74 and 75
+
+![alt text](image-4.png)
+
