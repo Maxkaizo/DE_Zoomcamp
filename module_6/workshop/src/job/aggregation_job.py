@@ -48,7 +48,7 @@ def log_aggregation():
     # Set up the execution environment
     env = StreamExecutionEnvironment.get_execution_environment()
     env.enable_checkpointing(10 * 1000)
-    env.set_parallelism(3)
+    env.set_parallelism(3) #prueba
 
     # Set up the table environment
     settings = EnvironmentSettings.new_instance().in_streaming_mode().build()
